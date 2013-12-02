@@ -1,0 +1,14 @@
+
+       <div id="raffler-form">
+            <input id="new-name"  size="60" autofocus>
+            <input type="submit" value="New" id="newvalue"/>
+        </div>
+        <div id="winners">
+            <ul id="name-list"></ul>
+        </div>
+        <div id='chooser'>
+            <button id='choosewinner'>Draw Winner</button>
+        </div></br>
+                <div id='reset'>
+            <button id='resetWinner'>Reset</button>
+        </div>

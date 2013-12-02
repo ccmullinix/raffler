@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Raffler in Backbone.js</title>
+   <link rel="stylesheet" href="http://zaad2.umbc.edu/class/698/698csws/698csbook/programs/backbone/raffler.css" media="screen">
+</head>
+<body>
+    <header id="header">
+      <h1>Raffler</h1>
+    </header>
+    <section id="raffler">
+        <div id="new">
+            <input id="new-name"  size="60" autofocus>
+            <input type="submit" value="New" id="newvalue"/>
+        </div>
+        <div id="winners">
+            <ul id="name-list"></ul>
+        </div>
+        <div id='chooser'>
+            <button id='choosewinner'>Draw Winner</button>
+        </div></br>
+                <div id='reset'>
+            <button id='resetWinner'>Reset</button>
+        </div>
+    </section>
+  <!-- Templates -->
+ <script type="text/template" id="item-template">
+      <label class="new-name">
+          {{name}}
+          <span class="entry-winner">{{winners}}</span>
+          <button id={{id}}>delete</button>
+        </label>
+  </script>  
+    <script type="text/javascript" src="/javascript/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascript/vendor/underscore.min.js"></script>
+    <script type="text/javascript" src="/javascript/vendor/backbone.min.js"></script>
+    <script type="text/javascript" src="/javascript/vendor/backbone_rails_sync.js"></script>
+    <script type="text/javascript" src="/javascript/vendor/backbone-validations.js"></script>
+    <script type="text/javascript "src="/javascript/vendor/hogan.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.0/backbone.localStorage-min.js" type="text/javascript"></script>
+<script src="raffler2.js"></script>
+</body>
+</html>
